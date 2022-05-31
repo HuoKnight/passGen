@@ -6,7 +6,13 @@ passArr = []
 
 
 for i in 1:parse(Int64, ARGS[1])
-    push!(passArr, chars[rand(1:39)])
+    char = rand(1:39)
+
+    if char <= 26 && rand((1, 2)) == 2
+        push!(passArr, uppercase(chars[char]))
+    else
+        push!(passArr, chars[rand(1:39)])
+    end
 end
 
 println("Password: ", join(passArr))
