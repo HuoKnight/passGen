@@ -1,6 +1,6 @@
 # passGen
 
-Done for a school assignment. Run with `julia passGen.jl <# characters in password>`.
+Done for a school assignment. Run with `julia passGen.jl <# characters in password>`.<br>
 e.g. `julia passGen.jl 15` to print a 15 character password.
 
 ### List of possible characters:
